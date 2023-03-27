@@ -1,0 +1,201 @@
+﻿body {
+    background-color: black;
+    font-size: 16px;
+    margin: 0;
+    font-family: 'Cooper',sans-serif;
+}
+
+@media (max-width: 500px) {
+    body {
+        font-size: 1em;
+    }
+
+}
+
+nav {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    height: 50px;
+    background-color: white;
+    z-index: 2;
+
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+#nome {
+    font-family: Lucida Handwriting;
+    font-size: 1.75em;
+    color: black;
+    margin: 10px;
+}
+
+@media(max-width: 500px) {
+    #nome {
+        font-size: 1em;
+    }
+}
+
+#menu {
+    display: none;
+}
+
+    #menu div {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 5px 15px;
+    }
+
+@media (max-width: 500px) {
+    #links {
+        display: none;
+    }
+
+    #menu {
+        display: block;
+    }
+}
+
+a {
+    cursor: pointer;
+}
+
+#links a {
+    margin-right: 1em;
+}
+
+#links{
+    margin-top: 1em;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    text-transform: uppercase;
+    color: black;
+    
+}
+
+header {
+    color: white;
+    background-image: url("background.png");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 500px) {
+    header {
+        height: 300px;
+        line-height: 1.2;
+    }
+}
+
+#overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+header h1 {
+    font-weight: normal;
+    text-align: center;
+    z-index: 1;
+}
+
+    header h1 a {
+        font-size: 1em;
+        color: black;
+    }
+
+    header h1 strong {
+        font-size: 2.5em;
+        letter-spacing: 3px;
+    }
+
+@media (max-width: 500px) {
+    header h1 strong {
+        font-size: 1.75em;
+        letter-spacing: 2px;
+    }
+}
+
+h1 a.acquista {
+    border: 0;
+    padding: 8px;
+    border-radius: 100px;
+    background-color: rgba(255, 255, 64, 0.8);
+    display: inline-block;
+}
+
+section {
+    background-color:rgba(255, 255, 63, 1);
+    margin: 80px 130px;
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+    section {
+        margin: 20px 30px;
+    }
+}
+
+#intro p {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5em;
+    width: 60%;
+}
+
+#vetrina {
+    background-color: rgba(255, 255, 63, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+}
+
+@media (max-width: 500px) {
+    #vetrina {
+        flex-direction: column;
+    }
+}
+
+#vetrina div {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+#vetrina img {
+    width: 50%;
+}
+
+#intro h1, #vetrina h1 {
+    color: black;
+    font-size: 1.75em;
+    font-weight: normal;
+}
+
+footer {
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+    font-size: 1em;
+}
+
+    footer p {
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        text-transform: uppercase;
+        color: black;
+    }
+
+    
